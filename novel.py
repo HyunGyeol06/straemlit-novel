@@ -25,7 +25,7 @@ def create_novel(
         model="gpt-4",
         messages=messages,
         max_tokens=5000,
-        temperature=2,
+        temperature=1,
     )
     summary = response.choices[0].message.content
     return summary
