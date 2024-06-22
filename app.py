@@ -17,7 +17,8 @@ def write_novel(
         genre1,
         main_character_name1,
         key_word1,
-        country1
+        country1,
+        option
     )
     print(final_novel)
 
@@ -36,6 +37,7 @@ genre = st.selectbox("장르", ["로맨스", "스릴러", "판타지", "SF", "�
 main_character_name = st.text_input("주인공 이름")
 key_word = st.text_input("주요 키워드")
 country = st.text_input("국가")
+option = st.selectbox("생성 옵션", ["줄거리", "간단한 묘사", "깊은 묘사"])
 
 clicked = st.button("채찍피티의 소설쓰기")
 
